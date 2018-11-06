@@ -72,10 +72,11 @@ nav{
   align-items: center;
   background-color: #333;
 }
-article ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.article{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 /* FLEXBOX ------------------------------------------------------------------------------*/
 /* NAVAGATION BAR -----------------------------------------------------------------------*/
@@ -175,6 +176,6 @@ filter: FlipH;
   padding-left: 10px;
   font-size:20px;
   color: gold;
-  
+
 }
 /* ICONS -------------------------------------------------------------------------------*/
