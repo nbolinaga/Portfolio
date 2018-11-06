@@ -1,12 +1,19 @@
+/* GENERAL -----------------------------------------------------------------------------*/
+
 * {box-sizing: border-box;
 }
 body{
   background-color: #204060;
+  /* font-family: 'Anton', sans-serif; */
+  font-family: 'KoHo', sans-serif;
+  /* font-family: 'Exo 2', sans-serif; */
+  color:white;
 }
 h1 {
   color:black;
   text-align: center;
   background-color: white;
+  font-family: 'Exo 2', sans-serif;
 }
 h2 {
   color:black;
@@ -18,20 +25,13 @@ h4 {
   color:white;
   padding-left: 25px;
 }
-li.thick {
-    font-weight: bold;
+ul{
+  list-style-type: none;
 }
-body {
-  color:white;
-}
-img {
-  border: 4px solid white;
-  padding: 4px;
-}
-img.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+/* GENERAL -----------------------------------------------------------------------------*/
+/* ASSIGMENT LIST-----------------------------------------------------------------------*/
+article ul{
+  padding: 1rem;
 }
 a.main:link, a:visited {
     background-color: #F65314;
@@ -45,18 +45,45 @@ li a.main:hover {
     background-color: #555;
     color: white;
 }
+.box{
+  background-color: #333;
+  height: 100%;
+}
+.boxtwo{
+  background-color: #333;
+  height: 100%;
+}
+/* ASSIGMENT LIST-----------------------------------------------------------------------*/
+/* FOOTER ------------------------------------------------------------------------------*/
 Footer {
   background-color: #555;
   color: white;
   padding: 4px;
   margin: 25px;
 }
+li.thick {
+    font-weight: bold;
+}
+/* FOOTER ------------------------------------------------------------------------------*/
+/* FLEXBOX -----------------------------------------------------------------------------*/
+nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+}
+article ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* FLEXBOX ------------------------------------------------------------------------------*/
+/* NAVAGATION BAR -----------------------------------------------------------------------*/
 ul.nav {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
 }
 li.nav {
     float: left;
@@ -71,3 +98,83 @@ li a.nav {
 li a.nav:hover {
     background-color: #111;
 }
+/* NAVAGATION BAR -----------------------------------------------------------------------*/
+/* IMAGES -------------------------------------------------------------------------------*/
+img {
+  border: 4px solid white;
+  padding: 4px;
+}
+img.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+img.about{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* IMAGES -------------------------------------------------------------------------------*/
+/* Hobbies ------------------------------------------------------------------------------*/
+ol.about {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+li.about {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    background-color: #333;
+}
+/* Hobbies ------------------------------------------------------------------------------*/
+/* ICONS -------------------------------------------------------------------------------*/
+.fa-address-card{
+  font-size: 24px;
+  padding-left: 3px;
+}
+.fa-copy+.fa-copy
+{-moz-transform: scaleX(-1);
+-o-transform: scaleX(-1);
+-webkit-transform: scaleX(-1);
+transform: scaleX(-1);
+filter: FlipH;
+-ms-filter: "FlipH";
+}
+.fa-play{
+  padding-right: 10px;
+  font-size: 14px;
+}
+.fa-gamepad{
+  padding-left: 10px;
+  font-size:20px;
+  color: gold;
+}
+.fa-futbol{
+  padding-left: 10px;
+  font-size:20px;
+  color: gold;
+}
+.fa-laptop-code{
+  padding-left: 5px;
+  font-size:20px;
+  color: gold;
+}
+.fa-drafting-compass{
+  padding-left: 10px;
+  font-size:20px;
+  color: gold;
+}
+.fa-dog{
+  padding-left: 10px;
+  font-size:20px;
+  color: gold;
+}
+.fa-snowflake{
+  padding-left: 10px;
+  font-size:20px;
+  color: gold;
+  
+}
+/* ICONS -------------------------------------------------------------------------------*/
