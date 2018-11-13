@@ -61,7 +61,7 @@ Footer {
   padding: 4px;
   margin: 25px;
 }
-li.thick {
+li.thicker {
     font-weight: bold;
 }
 /* FOOTER ------------------------------------------------------------------------------*/
@@ -114,6 +114,9 @@ img.about{
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+.none{
+  all: none;
 }
 /* IMAGES -------------------------------------------------------------------------------*/
 /* Hobbies ------------------------------------------------------------------------------*/
@@ -176,6 +179,72 @@ filter: FlipH;
   padding-left: 10px;
   font-size:20px;
   color: gold;
-
 }
 /* ICONS -------------------------------------------------------------------------------*/
+/* CSS transitions or nth-child --------------------------------------------------------*/
+.article :nth-child(even){
+  background-color: #555;
+}
+.article :nth-child(odd){
+  color: white;
+}
+aside li:nth-child(even){
+  color:gold;
+}
+article li{
+  transition-property: font-size;
+  transition-duration: 1s;
+  transition-delay: 0;
+}
+article li:hover{
+  font-size: 150%;
+}
+img.three{
+  height: 200px;
+  width: auto;
+  transition-property:height;
+  transition-duration: 1s;
+  transition-delay: 0;
+}
+img.three:hover{
+  height: 250px;
+  width: auto;
+}
+Footer{
+  transition-property: font-size,background-color,color;
+  transition-duration: 1s;
+  transition-delay: 0;
+}
+footer:hover{
+  font-size: 150%;
+  background-color: #F65314;
+  color:black;
+}
+.thick{
+  transition-property: font-size,background-color,color;
+  transition-duration: 1s;
+  transition-delay: 0;
+}
+.thick:hover{
+  font-size: 200%;
+  background-color: #F65314;
+  color:black;
+}
+ul.nav{
+  transition-property: font-size;
+  transition-duration: 1s;
+  transition-delay: 0;
+}
+ul.nav:hover{
+  font-size: 150%;
+}
+li.about{
+  transition-property: font-size;
+  transition-duration: 1s;
+  transition-delay: 0;
+}
+li.about:hover{
+  font-size: 150%;
+}
+
+/* CSS transitions or nth-child --------------------------------------------------------*/
